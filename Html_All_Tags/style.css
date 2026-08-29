@@ -1,0 +1,21 @@
+/* Selectors in Css:-
+*  (universal selector)
+element (Select All Type of Element)
+.class (Select All Element with Class using (.))
+#id  (Select All Element with Class using (#))
+element.class
+element, element
+element element
+element > element
+element + element
+element ~ element */
+body{
+    color: white;
+    background-color:black
+    /* background-image: url("photos/photo3.jpg"); */
+}
+
+h1{
+    color: cyan;
+    /* background-color: white; */
+}
