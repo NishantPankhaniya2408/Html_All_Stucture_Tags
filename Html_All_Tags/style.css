@@ -11,11 +11,59 @@ element + element
 element ~ element */
 body{
     color: white;
-    background-color:black
+    background-color: black;
     /* background-image: url("photos/photo3.jpg"); */
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+
+    /* position: sticky; */
 }
 
 h1{
     color: cyan;
+    font-size: 50px;
     /* background-color: white; */
 }
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    word-spacing: -3px;
+    position: sticky;
+    top: 0;
+    color: white;
+}
+a:hover{
+    color: cyan;
+}
+h2{
+    text-align: justify;
+}
+img{
+     width: 300px;
+    padding: 20px;
+    margin: 30px;
+    border: 2px solid black;
+}
+*{
+    box-sizing: border-box;
+}
+/* div{
+    display: inline-block;
+} */
+/* table{
+    position: fixed;
+    top: 0;
+    /* right: 0; */
+    /* width: 100%; */
+/* } */ 
+
+/* 15 */
