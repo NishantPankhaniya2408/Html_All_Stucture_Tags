@@ -16,7 +16,7 @@ body{
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-
+    margin: 0;
     /* position: sticky; */
 }
 
@@ -28,7 +28,7 @@ h1{
 p{
     font-family: 'Courier New', Courier, monospace;
 }
-a{
+/* a{
     font-style: italic;
     font-weight: bold;
     font-size: 20px;
@@ -40,10 +40,10 @@ a{
     position: sticky;
     top: 0;
     color: white;
-}
-a:hover{
+} */
+/* a:hover{
     color: cyan;
-}
+} */
 h2{
     text-align: justify;
 }
@@ -66,58 +66,77 @@ img{
     /* width: 100%; */
 /* } */ 
 
-.main{
+/* .main{
     display: flex;
     justify-content: center;
     /* flex-wrap: nowrap; */
     /* flex-direction: column; */
-    column-gap: 50px;
-     align-items: center;;
+    /* column-gap: 50px;
+     align-items: center;; */
     /* align-content: space-between; */
     /* align-items: stretch; */
     /* gap: 20px; */
     /* flex-direction: row-reverse; */
-}
+/* } */ 
 /* .main1{
     width: 100px;
     height: 100px;
     border: 2px solid white;
     align-self: flex-start;
 } */
-.main {
+/* .main {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     column-gap: 50px;
+    gap: 15px;
+} */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
 }
-
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* margin: 0 auto; */
+    /* padding: 0 10px; */
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid whitesmoke;
+    /* border-radius: 10px; */
+}
 .main1,
 .main2,
 .main3 {
-    height: 50px;
-    border: 2px solid white;
-
+    height: 30px;
+     border: 2px solid white;
+    /* border-radius: 10px; */
+    /* border-style: none; */
     display: flex;
     align-items: center;
     justify-content: center;
-
+    /* gap: 50px; */
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
-
+    background-color: white;
     color: black;
     text-decoration: none;
-
+    
     cursor: pointer;
 
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .main1 {
-    width: 110px;
+    width: 130px;
 }
 
 .main2 {
-    width: 130px;
+    width: 140px;
 }
 
 .main3 {
@@ -127,7 +146,68 @@ img{
 /* Hover */
 .main1:hover,
 .main2:hover,
-.main3:hover {
+.main3:hover,
+.main5:hover,
+.main6:hover,
+.main7:hover,
+.main8:hover,
+.main9:hover,
+.main0:hover {
     background-color: black;
     color: white;
+    border: 0px solid white;
+    border-radius: 10px;
+}
+.main4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.main5,
+.main6,
+.main7,
+.main8,
+.main9,
+.main0{
+    height: 30px;
+    /* border: 2px solid white; */
+    /* border-radius: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 50px; */
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+    color: black;
+    background-color: white;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+.main5{
+    width: 130px;
+}
+.main6{
+    width: 130px;
+}
+.main7{
+    width: 130px;
+}
+.main8{
+    width: 130px;
+}
+.main9{
+    width: 130px;
+}
+.main0{
+    width: 130px;
 }
