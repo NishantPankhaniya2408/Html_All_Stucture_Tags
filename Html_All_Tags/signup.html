@@ -3,7 +3,7 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Devlopment Learning</title>
+    <title>Sign Up</title>
     <style>
         body{
             background-color: #bfbfbf;
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
  </head>
  <body>
-    <header>
+    <!-- <header> -->
             <!-- <div class="main">
 
     <a href="https://www.saurashtrauniversity.co.in/Default.aspx" class="main1">
@@ -42,8 +42,8 @@
             <a href="https://github.com/NishantPankhaniya2408/OnlineExamSystem"
                target="_self" class="main7">Exam login</a>
 
-            <a href="https://www.hnhbkis.edu.in/"
-               target="_top" class="main8">About Us</a>
+            <!-- <a href="https://www.hnhbkis.edu.in/"
+               target="_top" class="main8">About Us</a> -->
 
             <a href="mailto:nishupankhaniya18@gmail.com"
                class="main9">Send Mail</a>
@@ -142,7 +142,7 @@
             <dd>Cascading Style Sheets</dd>
         </dl><hr> -->
         <!-- Table Tag in Html -->
-         <table border="4" align="center"  height="300" width="100%"  cellpadding="20">
+         <!-- <table border="4" align="center"  height="300" width="100%"  cellpadding="20">
             <tr>
                 <th>Id</th>
                 <th>Name</th>
@@ -164,86 +164,89 @@
                 <td>Sharma</td>
             </tr>
          </table>
-         <hr>
+         <hr> -->
          <!-- Form Tag in Html with div tag -->
-          <form>
-            <div>
-                <div>
+          <div class="mainform">
+      <div class="form-box">
+        <h1>Create Account</h1>
+        <p class="subtitle">Register your account</p>
+          <form> 
+            <div class="form1">
                     <label for="fname">First Name:</label>
-                    <input type="text"  pattern="[A-Za-z0-9_]{5,15}" title="Please enter a valid first name (1-15 characters, letters, numbers, and underscores only)"
- required>
+                    <input type="text"  pattern="[A-Za-z0-9_]{5,15}" placeholder="Enter your first name" title="Please enter a valid first name (1-15 characters, letters, numbers, and underscores only)" required>
                 </div>
-                <div>
+                <div class="form1">
                     <label for="lname">Last Name: </label>
-                    <input type="text" required>
+                    <input type="text" placeholder="Enter your last name" required>
                 </div>
                
-                <div>
+                <div  class="form1">
                     <label for="number">Phone Number:</label>
-                    <input type="tel" required pattern="[6-9][0-9]{9}" title="Please enter a valid 10-digit phone number">
+                    <input type="tel" placeholder="Enter your phone number" required pattern="[6-9][0-9]{9}" title="Please enter a valid 10-digit phone number">
                 </div>
-                <div>
+                <!-- <div class="form1">
                     <label for="link">Link</label>
                     <input type="url" required>
-                </div>
-                <div>
+                </div> -->
+                <!-- <div class="form1">
                     <label for="search">Search Here</label>
                     <input type="search" required>
-                </div>
-                <div>
+                </div> -->
+                <!-- <div class="form1">
                     <label for="date">Date of birth</label>
                     <input type="date" required>
                 </div>
-                <div>
+                <div class="form1">
                     <label for="time">Time</label>
                     <input type="time">
                 </div>
-                <div>
+                <div class="form1">
                     <label for="date-time">Date & Time</label>
                     <input type="datetime-local">
                 </div>
-                <div>
+                <div class="form1">
                     <label for="month">Addmission Month</label>
                     <input type="month">
                 </div>
-                <div>
+                <div class="form1">
                     <label for="week">Select Week</label>
                     <input type="week">
                 </div>
-                <div>
+                <div class="form1">
                     <label for="color">Select Color</label>
                     <input type="color" >
                 </div>
-                <div>
+                <div class="form1">
                     <label for="range">Give range of it</label>
                     <input type="range">
-                </div>
-                <div>
-                    <label for="checkbox">Which you know language</label>
-                    <input type="checkbox">C
+                </div> -->
+                <div class="checkbox-group">
+                    <label for="checkbox" >Which language you know</label>
+                    <input type="checkbox"  >C
                     <input type="checkbox">Python
                     <input type="checkbox">Java
                     <input type="checkbox">Perl
                 </div>
-                <div>
+                <div class="radio-group" > 
                     <label for="radio">Gender</label>
                     <input type="radio">Male
                     <input type="radio">Female
                     <input type="radio">Other
                 </div>
-                <div>
+                <!-- <div class="form1">
                     
                     <input type="file">
-                </div>
-                 <div>
+                </div> -->
+                 <div class="form1">
+
                     <label for="email">Email: </label>
-                    <input type="email" required>
-                </div>
-                <div>
+                    <input type="email" placeholder="Enter your email" required>
+                </div class="form1">
+                <div class="form1">
                     <label for="password">Password: </label>
-                    <input type="password" required>
+                    <input type="password" placeholder="Enter your password" required>
                 </div>
-                <div>
+                <!-- <div class="form1">
                     <label>Select Course:</label>
                     <select>
                         <option>Choose</option>
@@ -253,7 +256,7 @@
                         <option>Msc IT</option>
                     </select>
                 </div>
-                <div>
+                <div class="form1">
                 <select multiple>
                     <option>HTML</option>
                     <option>CSS</option>
@@ -261,25 +264,33 @@
                     <option>React</option>
                 </select>
                 </div>
-                <div>
+                <div class="form1">
                     <select name="course">
 
                         <option value="bca">BCA</option>
                         <option value="mca">MCA</option>
                         <option value="btech">B.Tech</option>
                     </select>
-                </div>
-                <div>
+                </div> -->
+                <!-- <div class="form1">
                     <label for="textarea">Address:</label><br>
                     <textarea name="address" id="message" cols="30" rows="5"></textarea>
+                </div> -->
+                <div class="mainbtn">
+                    <button type="submit" class="btn">Register</button>
+                    <button type="reset" class="btn">Reset</button>
+                    <!-- <input type="button"  value="Click Me" class="btn" onclick="alert('Button clicked!')"> -->
                 </div>
-                
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
-                    <input type="button" value="Click Me">
+                 <p class="bottom-text">
+            Already have an account? <a href="SignIn.html">Login</a>
+          </p>    
             </div>
+               
+                
           </form>
-      
+      </div>
+      </div>
+    
  </body>
  </html>
  
