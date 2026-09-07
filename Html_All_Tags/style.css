@@ -15,6 +15,14 @@ body{
     background: linear-gradient(90deg, #6b5bff 0%, #5cc8f0 50%, #7c4dff 100%);
 
 }
+html,
+body {
+    /* margin: 0; */
+    /* padding: 0; */
+    /* width: 100%; */
+    /* height: 100%; */
+    overflow: hidden;
+}
 /* :root {
     --bg: #F0F4F8;
     --surface: #ffffff;
@@ -82,29 +90,35 @@ img{
      padding: 0;
 }
 .mainform {
+    /* height: 100%; */
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 10px;
 }
 .form-box{
     width: 100%;
+    /* height: 100%; */
         /* background: linear-gradient( rgb(22, 52, 121) 0%, rgb(65, 97, 180) 55%, rgb(42, 95, 232) 100%); */
         background: white;      
     max-width: 550px;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.login-box {
+  max-width: 450px;
 }
 .radio-group,
 .checkbox-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
   margin-bottom: 20px;
    font-weight: normal;
    font-family: 'Courier New', Courier, monospace;
+   font-size: 25px;
 }
 .radio-group label,
 .checkbox-group label {
@@ -116,13 +130,22 @@ img{
 }
 .form-box h1{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    word-spacing: -15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant:normal;
+    font-stretch: normal;
+    text-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
 }
 .subtitle{
     text-align: center;
     font-size: 20px;
     color: #777;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    font-family:'Times New Roman', Times, serif
 }
 .form1{
     margin-bottom: 20px;
@@ -132,6 +155,13 @@ img{
     margin-bottom: 8px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+.form1 input[type="text"]:hover,
+.form1 input[type="tel"]:hover,
+.form1 input[type="email"]:hover,
+.form1 input[type="password"]:hover{
+    border-color: #02ffff;
 }
 .form1 input[type="text"],
 .form1 input[type="tel"],
@@ -142,7 +172,7 @@ img{
 /* .form1 input[type="datetime-local"] */{
     width: 100%;
     padding: 8px;
-    border: 3px solid #14181a;
+    border: 2px solid #14181a;
     border-radius: 6px;
     font-size: 15px;
     outline: none;
@@ -168,6 +198,24 @@ img{
   cursor: pointer;
   font-family: 'Times New Roman', Times, serif;
 }
+.btn1{
+    /* display:  fle; */
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #080bda;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+}
+.btn1:hover{
+    background-color: #df8b0d;
+    color: whitesmoke;
+    transition: 1.0s;
+}
+
 .btn:hover{
     background-color: #df8b0d;
     color: whitesmoke;
@@ -180,6 +228,19 @@ img{
   font-family: 'Courier New', Courier, monospace;
 }
 .bottom-text a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.bottomtext {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+.bottomtext a {
   color: #2563eb;
   text-decoration: none;
   font-weight: bold;
@@ -228,6 +289,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
+    height: 30px;
     
 }
 .main {
@@ -235,10 +297,10 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     /* padding: 0 10px; */
     box-sizing: border-box;
-    background-color: black;
+    background-color: white;
     border: 2px solid black;
     /* border-radius: 10px; */
 }
@@ -247,6 +309,7 @@ header{
 .main3 {
     height: 30px;
      border: 2px solid black;
+     border: none;
     /* border-radius: 10px; */
     /* border-style: none; */
     display: flex;
@@ -255,13 +318,13 @@ header{
     /* gap: 50px; */
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
-    background-color: black;
-    color: white;
+    background-color: whitesmoke;
+    color: black;
     text-decoration: none;
     
     cursor: pointer;
 
-    transition: 0.5s;
+    transition: 0.9s;
 }
 table{
     text-align: center;
@@ -295,10 +358,11 @@ td:hover{
 .main8:hover,
 .main9:hover,
 .main0:hover {
-    background-color: white;
-    color: black;
-    border: 0px solid white;
-    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: 0px solid black;
+    /* border-radius: 10px; */
+    text-decoration: none;
 }
 .main4 {
     display: flex;
@@ -327,8 +391,8 @@ td:hover{
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
 
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     text-decoration: none;
 
     cursor: pointer;
